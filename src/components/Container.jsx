@@ -1,9 +1,9 @@
 // import library
 import PropTypes from 'prop-types'
 
-const Container = ({children}) => {
+const Container = ({children, width}) => {
     return(
-        <div className="w-screen">
+        <div className={width}>
             {children}
         </div>
     )

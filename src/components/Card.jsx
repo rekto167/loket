@@ -4,9 +4,8 @@ import styles from './Card.module.css'
 
 const Card = () => {
     return(
-        <div className="flex items-center justify-center h-screen">
             <div className="bg-white text-white font-bold rounded-lg border shadow-lg w-100 h-100">
-                <img src={dunia} className="w-fit rounded-tl" />
+                <img src={dunia} className="w-fit rounded-t-lg" />
                 <div className="p-3">
                     <h6 className="text-lg font-semibold text-black">DUNIA MENCEKAM</h6>
                     <p className="text-black font-normal">Tanggal 5 Januari Dunia Mencekam buka kembali! Siap-siap ya, menjelajahi hutan angker lengkap dengan hantu ala Jepang yang serem abis!</p>
@@ -17,7 +16,6 @@ const Card = () => {
                 </div>
 
             </div>
-        </div>
     )
 }
 

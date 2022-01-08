@@ -23,7 +23,7 @@ const theme = createTheme({
 });
 
 
-const Navbar = () => {
+const NavbarBeranda = () => {
     const [open, setOpen] = useState(false)
     const anchorRef = useRef(null);
 
@@ -155,4 +155,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default NavbarBeranda

@@ -1,8 +1,17 @@
-import Navbar from './components/beranda/Navbar'
+// components
+import NavbarBeranda from './components/beranda/Navbar'
+import Container from './components/Container'
+import SwipeImage from './components/SwipeImage'
 
 function App() {
   return (
-    <Navbar />
+    <>
+      <NavbarBeranda />
+      <Container>
+        <SwipeImage />
+        asdasdasd
+      </Container>
+    </>
   );
 }
 

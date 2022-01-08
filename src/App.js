@@ -2,6 +2,7 @@
 import NavbarBeranda from './components/beranda/Navbar'
 import Container from './components/Container'
 import SwipeImage from './components/SwipeImage'
+import Card from './components/Card'
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       <NavbarBeranda />
       <Container>
         <SwipeImage />
-        asdasdasd
+        <div clasName="flex items-center justify-center h-screen">
+          <Card />
+        </div>
       </Container>
     </>
   );

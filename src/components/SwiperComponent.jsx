@@ -8,7 +8,7 @@ import CardItem from './CardItem'
 import "swiper/css";
 import "swiper/css/navigation"
 
-// import "./styles.css";
+import "./SwiperComponent.css";
 
 
 // import Swiper core and required modules

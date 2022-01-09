@@ -1,43 +1,22 @@
-// components
-import NavbarBeranda from './components/beranda/Navbar'
-import Container from './components/Container'
-import SwipeImage from './components/SwipeImage'
-import Card from './components/Card'
-import CardTopSelling from './components/CardTopSelling'
-import CardItem from './components/CardItem'
-import SwiperComponent from './components/SwiperComponent'
+import React, {Fragment} from 'react'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+// component
+import Beranda from './pages/Beranda'
+import CreateEvent from './pages/CreateEvent'
+import Discover from './pages/Discover'
 
-function App() {
-  return (
-    <>
-      <NavbarBeranda />
-      <div className="mt-32">
-        <SwipeImage />
-      </div>
-      <Container width="w-full mt-20">
-        <div className="w-4/5 mx-auto flex flex-wrap justify-between mt-10">
-          {/* Featured Event */}
-          <div>
-            <h3 className="font-bold text-black text-4xl mb-4">Featured Event</h3>
-            <Card />
-          </div>
-          {/* End Featured Event */}
-          {/* Start - Top Selling */}
-          <div className="mb-52">
-            <h3 className="font-bold text-black text-4xl mb-4">Top Selling</h3>
-            <CardTopSelling />
-            <CardTopSelling />
-            <CardTopSelling />
-          </div>
-          {/* End - Top Selling */}
-          {/* Start Event Recommended */}
-          <SwiperComponent />
-          {/* End Event Recommended */}
-        </div>
-      </Container>
-
-    </>
-  );
+const App = () => {
+  return(
+    <BrowserRouter>
+      <Fragment>
+        <Routes>
+          <Route exact path='/' element={<Beranda />} />
+          <Route exact path='/buat-event' element={<CreateEvent />} />
+          <Route exact path='/discover' element={<Discover />} />
+        </Routes>
+      </Fragment>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

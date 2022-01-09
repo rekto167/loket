@@ -1,6 +1,7 @@
 import LoketWhite from '../../assets/logo-loket-white.png'
 // library
 import {useState, useRef, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import Button from '@mui/material/Button'
 import MenuList from '@mui/material/MenuList'
 import Paper from '@mui/material/Paper';
@@ -73,7 +74,7 @@ const NavbarBeranda = () => {
             </div>
             <div className="flex flex-wrap items-center">
                 <div className="mr-3 flex items-center ">
-                    <a href="#" className="text-teal-500 mr-3 uppercase hover:text-white">Cari Event</a>
+                    <Link to="/discover" className="text-teal-500 mr-3 uppercase hover:text-white">Cari Event</Link>
                     <ThemeProvider theme={theme}>
                         <Button
                         color="teal"
@@ -114,9 +115,9 @@ const NavbarBeranda = () => {
                                 onKeyDown={handleListKeyDown}
                             >
                                 <MenuItem onClick={handleClose}>
-                                    <button className="bg-white text-black border-2 border-teal-900 p-1 rounded">
+                                    <Link to='/buat-event' className="bg-white text-black border-2 border-teal-900 p-1 rounded">
                                         Buat Event
-                                    </button>
+                                    </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleClose}>
                                     <a href="#">

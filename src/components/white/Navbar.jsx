@@ -6,7 +6,9 @@ const Navbar = () => {
     return(
         <nav className="bg-white p-10 flex items-center justify-between shadow-lg">
             <div className="flex">
-                <img src={loketBlue} className='w-32 mr-5' />
+                <Link to="/">
+                    <img src={loketBlue} className='w-32 mr-5' />
+                </Link>
             </div>
             <div className="flex items-center">
                 <a href="#" className="uppercase font-bold mr-20 text-gray-500">bantuan</a>

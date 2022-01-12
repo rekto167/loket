@@ -1,6 +1,8 @@
-// library
+// component
 import Navbar from '../components/white/Navbar'
 import Container from '../components/Container'
+import CardCreateTicket from '../components/CardCreateTicket'
+// library
 import {useState} from 'react';
 // Material UI
 import PropTypes from 'prop-types';
@@ -140,7 +142,11 @@ const CreateEvent = () => {
                             </Tabs>
                         </Box>
                         <TabPanel value={value} index={0}>
-                            Kategori Tiket
+                            <div className="mx-auto flex justify-between">
+                                <CardCreateTicket />
+                                <CardCreateTicket />
+                                <CardCreateTicket />
+                            </div>
                         </TabPanel>
                         <TabPanel value={value} index={1}>
                             <CKEditor
